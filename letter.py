@@ -1,0 +1,5 @@
+print('September 24th 2022')
+print('I am feeling pretty shitty')
+print('In 3 months, I have become comfortable coding in python and I am able to build projects in it')
+print('You got this choom! do not let the imposter syndrome get to you!')
+print('😂')
