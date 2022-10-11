@@ -9,21 +9,38 @@
 
 # about_me("Myles", "Software Developer", "Rocket, Harley & JoJo")
 
-import random
-from sty import fg
+# import random
+# from sty import fg
 
 
-def generateRGB():
-    red = random.randint(0, 256)  # Numbers between 0 and 256
-    green = random.randint(0, 256)
-    blue = random.randint(0, 256)
-    return red, green, blue
+# def generateRGB():
+#     red = random.randint(0, 256)  # Numbers between 0 and 256
+#     green = random.randint(0, 256)
+#     blue = random.randint(0, 256)
+#     return red, green, blue
 
 
-def generateColor(red, green, blue):
-    return fg(red, green, blue)
+# def generateColor(red, green, blue):
+#     return fg(red, green, blue)
 
 
-red, green, blue = generateRGB()
-color = generateColor(red, green, blue)
-print(color, "I'm randomly changing colors")
+# red, green, blue = generateRGB()
+# color = generateColor(red, green, blue)
+# print(color, "I'm randomly changing colors")
+
+
+def cardPackets(cardTypes):
+    # implemented to support 2 packets
+    cardSum = 0
+
+    for i in cardTypes:
+        if(i % 2 != 0):
+            cardSum += 1
+
+    if(cardSum < 2 or cardSum == 3):
+        cardSum = 0
+
+    return cardSum
+
+
+cardPackets()
