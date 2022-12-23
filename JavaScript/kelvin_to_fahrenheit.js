@@ -10,5 +10,5 @@ let fahrenheitTemp = celsiusTemp * (9 / 5) + 32;
 console.log(
   `The temperature is`,
   Math.floor(fahrenheitTemp),
-  "degrees Fahrenehit"
+  "° degrees Fahrenehit"
 );
