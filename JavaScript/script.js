@@ -12,7 +12,7 @@ myHouse.isAmazing = true;
   (myHouse["lishaWillLoveIt"] = true);
 
 // <====== Object Constructor Function ======>
-//Keeps the code clean and readable
+//Keeps the code clean and readable & makes it eaiser to access data from an object. Especially large ones
 class Car {
   constructor(make, model, year) {
     this.make = make;
@@ -25,7 +25,7 @@ var car2 = new Car("Toyota", "Rav-4", 2023);
 var car3 = new Car("Porshe", "911", 2022);
 var car4 = new Car("Rolls Royce", "Phantom", 2024);
 car4.price = "$2,000,000 USD";
-console.log(car1, car2, car3, car4);
+// console.log(car1, car2, car3, car4);
 
 //<====== This is the new way to make constructors ======>//
 class Home {
@@ -44,7 +44,7 @@ home2 = new Home(2, true, "beige", true, true, "Austin", "Texas");
 home3 = new Home(3, true, "Redish-Brown", false, "United Kingdom", "London");
 home4 = new Home(4, false, "Greenish-Brown", false, "Australia", "Sydney");
 
-console.log(home1, home2, home3, home4);
+// console.log(home1, home2, home3, home4);
 
 class Books {
   constructor(title, genre, author) {
@@ -79,4 +79,31 @@ book5 = new Books(
   "Superhero",
   "David Liss"
 );
-console.log(book1, book2, book3, book4, book5);
+
+class Pets {
+  constructor(name, species, breed) {
+    this.name = name;
+    this.species = species;
+    this.breed = breed;
+  }
+}
+
+pet1 = new Pets("Jojo", "Cat", "American Short-Hair / Tuxedo Cat");
+pet2 = new Pets("Rocket", "Dog", "Yorkie-Lahasa Aposo mix");
+pet3 = new Pets("Harley", "Dog", "Yorkie-Lahasa Aposo mix");
+
+var testScores = [4, 5, 100, 99, 85, 77];
+lastTestScore = testScores.pop();
+
+const sportTeams = [
+  "Lakers",
+  "Warriors",
+  "Bucks",
+  "Rockets",
+  "Clippers",
+  "Celtics",
+];
+sportTeams.length();
+myFavoriteTeam = sportTeams[0];
+
+sportTeams.push("Trailblazers");
