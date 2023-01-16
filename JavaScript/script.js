@@ -103,7 +103,48 @@ const sportTeams = [
   "Clippers",
   "Celtics",
 ];
-sportTeams.length();
+
 myFavoriteTeam = sportTeams[0];
 
 sportTeams.push("Trailblazers");
+
+let shoppingList = [
+  "apples",
+  "pizza",
+  "chicken",
+  "mushrooms",
+  "oranges",
+  "beef",
+];
+
+let bigDog = ["Akita", "Pitbull", "Bernese Moutain Dog", "Great Dane"];
+let littleDog = ["Yorkie", "Lahasa Aposo", "Shiba", "Pug"];
+
+let allDogs = bigDog.concat(littleDog);
+
+var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+var colors2 = [
+  "lavander",
+  "brown",
+  "purple",
+  "pink",
+  "black",
+  "white",
+  "silver",
+];
+
+let newColors = colors.concat(colors2);
+
+var weather = [
+  "rainy",
+  "cold",
+  "chilly",
+  "snowy",
+  "cloudy",
+  "hot",
+  "warm",
+  "humid",
+];
+var winter = weather.slice(0, 5); //<==== Proper slice method, It's grabing the first index of the Array and the last one. But instead of usung '4' I put '5' because it is grabing everything up untill the 5th index in the Array.
+var summer = weather.slice(5, 8);
